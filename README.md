@@ -7,3 +7,6 @@ Just testing the GitHub features
 
 Include2 - foo:
 {% include foo.md %}
+
+Include3 - foo:
+{% include foo3.md %}

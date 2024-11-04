@@ -1,3 +1,7 @@
+---
+model: my-model
+flag: my-flag
+---
 # test-web
 Just testing the GitHub features
 
@@ -9,4 +13,4 @@ Include2 - foo:
 {% include foo.md %}
 
 Include3 - foo:
-{% include foo3.md model="my-model" flag="my-flag" %}
+{% include foo3.md %}

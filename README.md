@@ -1,4 +1,5 @@
 ---
+permalink: /
 model: my-model
 flag: my-flag
 ---

@@ -6,7 +6,7 @@
         #address-cells = <1>;
         #size-cells = <0>;
         accel@1f {
-            compatible = {{ page.compatible }}";
+            compatible = "{{ page.compatible }}";
             reg = <0x1f>;
             interrupt-parent = <&gpio1>;
             interrupts = <29 IRQ_TYPE_LEVEL_LOW>;
@@ -19,7 +19,7 @@
 
 Where,
 
-- “compatible” must be {{ page.compatible }} for the {{ page.sensorname }}.
+- “compatible” must be "{{ page.compatible }}" for the {{ page.sensorname }}.
 - “reg” must be the I2C slave address sensor is using.
 - “interrupt-parent” must reference the interrupt controller where the interrupt from the sensor is wired 
 - “interrupts” must specify the pin in the interrupt controller. How this is done is controller specific and should be found from the interrupt controller’s device tree binding documents.

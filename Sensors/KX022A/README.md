@@ -1,7 +1,7 @@
 ---
 permalink: /Sensors/KX022A/
 sensorname: KX022ACR-Z
-compatible: "kionix,kx022a"
+compatible: kionix,kx022a
 ---
 
 # ROHM/Kionix 3-Axis Accelerometer IC KX022ACR-Z

@@ -1,0 +1,3 @@
+# Subdir without permalink in README.md
+
+Let's see if this gets displayed on pages when there is some subdirs with front matter and permalinks...

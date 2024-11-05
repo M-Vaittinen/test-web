@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /subdir
 model: my-sub-model
 flag: my-sub-flag
 ---

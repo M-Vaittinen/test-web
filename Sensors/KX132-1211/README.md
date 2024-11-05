@@ -20,6 +20,8 @@ KX132-1211 is a 3-axis accelerometer from ROHM/Kionix. The KX132-1211 is in many
 
 {% include kx022a_dt_example.md %}
 
+{% include quickstart_accel.md %}
+
 {% include upstream_support.md %}
 
 {% include known_issues.md %}

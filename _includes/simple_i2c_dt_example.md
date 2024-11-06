@@ -13,7 +13,7 @@
         reg = <0x38>;
 {%- if page.dtsupply %}
     {%- for s in page.dtsupply %}
-        {{ s }}-supply = <&{{ s ]]>;
+        {{ s }}-supply = <&{{ s }}>;
     {% endfor -%}
 {%- endif %}
 {%- if page.dtintparent %}

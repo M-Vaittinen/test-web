@@ -11,9 +11,9 @@ no supplies
 {% endif %}
 
 {%- if page.test %}
-{% for s in page.test -%}
+{% for s in page.test %}
     {{ s }}-supply = <&{{ s }}>;
 {% endfor %}
-{% else %}
+{%- else %}
 no test supplies
 {% endif %}

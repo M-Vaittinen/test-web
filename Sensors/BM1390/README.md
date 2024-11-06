@@ -5,7 +5,7 @@ bindinglink: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/
 sensorname: BM1390GLV-Z
 devicetype: pressure-sensor
 compatible: rohm,bm1390glv-z
-dtsupply: vdd-supply = <&vdd>
+dtsupply: [ vdd ]
 dtintparent: <&gpio1>
 dtints: <29 IRQ_TYPE_LEVEL_LOW>
 upstreamed: v6.7

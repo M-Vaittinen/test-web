@@ -12,7 +12,9 @@
         compatible = {{ page.compatible }};
         reg = <0x38>;
 {%- if page.dtsupply %}
-        {{ page.dtsupply }};
+    {%- for s in page.dtsupply %}
+        {{ s }}-supply = <&{{ s ]]>;
+    {% endfor -%}
 {%- endif %}
 {%- if page.dtintparent %}
         interrupt-parent =  {{ page.dtintparent }};
@@ -29,7 +31,9 @@ Where,
 - "compatible" must be "{{ page.compatible }}" for the {{ page.sensorname }}.
 - "reg" must be device's I2C address.
 {%- if page.dtsupply %}
-- {{ page.dtsupply }} refers to the regulator supplying power to the device.
+    {%- for s in page.dtsupply %}
+- "{{ s }}-supply" refers to a regulator supplying "{{ s }}" power to the device.
+    {%- endfor %}
 {%- endif %}
 {%- if page.dtintparent %}
 - "interrupt-parent" refers to the interrupt controlled IRQ is wired to.

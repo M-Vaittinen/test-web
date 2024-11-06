@@ -2,18 +2,18 @@
 
 got model {{ page.model }} and flag {{ page.flag }}
 
-{%- if supplies %}
+{% if supplies -%}
 {% for supply in supplies %}
     {{ supply }}-supply = <&{{ supply }}>;
-{% endfor %}
-{% else %}
+{% endfor -%}
+{%- else -%}
 no supplies
-{% endif %}
+{%- endif %}
 
-{%- if page.test %}
+{% if page.test %}
 {% for s in page.test %}
     {{ s }}-supply = <&{{ s }}>;
-{% endfor %}
+{% endfor -%}
 {%- else %}
 no test supplies
 {% endif %}

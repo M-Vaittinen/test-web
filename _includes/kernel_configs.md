@@ -9,13 +9,10 @@ Configuration options may want to enable for kernel build are:
 {% endfor -%}
 ```
 
-Description:
+| config | description | subsystem |
+------------------------------------
 {%- for c in page.configs %}
-{{ c.config }}
-
-{{ c.description }}
-
-Subsystem: {{ c.subsystem }}
+| {{ c.config }} | {{ c.description }} | {{ c.subsystem }} |
 {% endfor -%}
 
 

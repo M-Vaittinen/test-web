@@ -2,7 +2,7 @@
 #items:
 configs:
   - config: CONFIG_MFD_ROHM_BD71828
-    subsystem: MFD
+    subsystem: mfd
   - config: CONFIG_REGULATOR_BD71828
     description: Enables the regulator driver which provides control for individual regulatos.
     subsystem: regulator
@@ -11,10 +11,10 @@ configs:
     subsystem: clk
   - config: CONFIG_GPIO_BD71828
     description: Enables the GPIO driver which provides control for the PMIC's generic purpose input/output pins.
-    subsystem: GPIO
+    subsystem: gpio
   - config: CONFIG_RTC_DRV_BD70528
     description: Enables the RTC driver which provides the control for the real time clock on PMIC. The RTC can maintain the time when SOC is turned off and provide timed events. Timed wake-up is also supported.
-    subsystem: RTC
+    subsystem: rtc
   - config: CONFIG_I_JUST_INVENTED_THIS_FOR_TESTING_NO_DESCRIPTION
     subsystem: watchdog
 ---

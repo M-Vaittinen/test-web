@@ -18,5 +18,5 @@ configs:
     subsystem: RTC
 ---
 
-{% include kernel_configs.md %}
+{% include kernel_conf_tbl.md %}
 

@@ -16,6 +16,8 @@ configs:
   - config: CONFIG_RTC_DRV_BD70528
     description: Enables the RTC driver which provides the control for the real time clock on PMIC. The RTC can maintain the time when SOC is turned off and provide timed events. Timed wake-up is also supported.
     subsystem: RTC
+  - config: CONFIG_I_JUST_INVENTED_THIS_FOR_TESTING_NO_DESCRIPTION
+    subsystem: watchdog
 ---
 
 {% include kernel_conf_tbl.md %}

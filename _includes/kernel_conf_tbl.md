@@ -17,7 +17,7 @@ Configuration options may want to enable for kernel build are:
 {%- else -%}
     {%- capture desc -%} {%- include {{ c.subsystem }}-cfg-desc.md -%} {%- endcapture -%}
 {%- endif -%}
-| {{ c.config }} | {{ desc }} | {{ c.subsystem }} |
+| {{ c.config }} | {{ desc | strip_newlines }} | {{ c.subsystem }} |
 {% endfor -%}
 
 

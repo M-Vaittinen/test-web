@@ -15,7 +15,8 @@ Configuration options may want to enable for kernel build are:
 {%- if c.description -%}
     {%- capture desc -%} {{ c.description }} {%- endcapture -%}
 {%- else -%}
-    {%- capture desc -%} {%- include "defaulttxt/{{ c.subsystem }}-cfg-desc.md" -%} {%- endcapture -%}
+    {%- capture ifile -%} defaulttxt/{{- c.subsystem -}}-cfg-desc.md {%- endcapture -%}
+    {%- capture desc -%} {%- include {{ ifile }} -%} {%- endcapture -%}
 {%- endif -%}
 | {{ c.config }} | {{ desc | strip_newlines }} | {{ c.subsystem }} |
 {% endfor -%}

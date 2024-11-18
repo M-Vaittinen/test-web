@@ -2,7 +2,6 @@
 #items:
 configs:
   - config: CONFIG_MFD_ROHM_BD71828
-    description: Enables the MFD core driver which handles interrupts and bus access. The core driver also launches the sub device drivers.
     subsystem: MFD
   - config: CONFIG_REGULATOR_BD71828
     description: Enables the regulator driver which provides control for individual regulatos.
@@ -18,6 +17,8 @@ configs:
     subsystem: RTC
   - config: CONFIG_I_JUST_INVENTED_THIS_FOR_TESTING_NO_DESCRIPTION
     subsystem: watchdog
+  - config: CONFIG_FOR_NOT_EXISTING_SUBSYS
+    subsystem: ss
 ---
 
 {% include kernel_conf_tbl.md %}

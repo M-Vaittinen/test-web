@@ -17,8 +17,6 @@ configs:
     subsystem: RTC
   - config: CONFIG_I_JUST_INVENTED_THIS_FOR_TESTING_NO_DESCRIPTION
     subsystem: watchdog
-  - config: CONFIG_FOR_NOT_EXISTING_SUBSYS
-    subsystem: ss
 ---
 
 {% include kernel_conf_tbl.md %}

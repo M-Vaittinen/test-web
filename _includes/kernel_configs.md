@@ -4,7 +4,7 @@ Configuration options may want to enable for kernel build are:
 
 
 ```
-{%- for c in page.configs %}
+{% for c in page.configs -%}
 - {{ c.config }}
 {% endfor -%}
 ```
